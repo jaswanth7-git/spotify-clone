@@ -1,0 +1,604 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VJ MUSIC</title>
+    <link rel="icon" href="https://t4.ftcdn.net/jpg/03/03/86/45/360_F_303864508_Cd302J6F685c30fPtNpIMp3qyKlVFEtI.jpg">
+    <link rel="stylesheet" href="{% static 'music/style.css' %}">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <div class="jumbotron">
+        <div class="container">
+          <div id="carousel-tour" class="carousel slide" data-ride="carousel" data-interval="false">
+      
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-tour" data-slide-to="0" class="active js-button-hero-carousel-dots"></li>
+              <li data-target="#carousel-tour" data-slide-to="1" class="js-button-hero-carousel-dots"></li>
+              <li data-target="#carousel-tour" data-slide-to="2" class="js-button-hero-carousel-dots"></li>
+              <li data-target="#carousel-tour" data-slide-to="3" class="js-button-hero-carousel-dots"></li>
+            </ol>
+      
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox" style="height: 307px;">
+              <div class="item active">
+                <h1>
+                  <span class="text-white">
+                    3 months of Premium for $0.99.
+                  </span>
+                </h1>
+                <a href="#" class="btn btn-lg btn-solid js-button-hero-get-premium">
+                  Learn More
+                </a>
+                <p class="text-center text-white text-signup">
+                  Or sign up for our <a href="#" class="js-goto-signup">free service</a>.
+                </p>
+              </div>
+      
+              <div class="item">
+                <h1>
+                  <span class="text-white">
+                    Premium for your whole family.<br>Just $14.99.
+                  </span>
+                </h1>
+                <a href="#" class="btn btn-solid js-button-hero-family">
+                  LEARN MORE
+                </a>
+              </div>
+      
+              <div class="item">
+                <h1>
+                  <span class="text-white">
+                    Students get 50% off Premium.
+                  </span>
+                </h1>
+                <a href="#" class="btn btn-solid js-button-hero-student">
+                  LEARN MORE
+                </a>
+              </div>
+      
+              <div class="item">
+                <h1>
+                  <span class="text-white">
+                    Play Spotify on PlayStation®.
+                  </span>
+                </h1>
+                <a href="#" class="btn btn-solid js-button-hero-playstation">
+                  LEARN MORE
+                </a>
+              </div>
+            </div>
+      
+            <!-- Controls -->
+            <a class="left carousel-control js-button-hero-carousel-left-arrow" href="#carousel-tour" data-slide="prev">
+              <span class="icon-prev"></span>
+              <span class="sr-only">
+                Previous
+              </span>
+            </a>
+            <a class="right carousel-control js-button-hero-carousel-right-arrow" href="#carousel-tour" data-slide="next">
+              <span class="icon-next"></span>
+              <span class="sr-only">
+                Next
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    <div class="bg-main">
+        <div class="bg-main-img"></div>
+      </div>
+    <header class="navbar navbar-dark navbar-fixed-top" role="banner">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="#">
+              <span class="navbar-logo">VJ MUSIC</span>
+            </a>
+          </div>
+      
+          <nav class="collapse navbar-collapse" id="navbar-nav" role="navigation">
+            <ul class="nav navbar-nav navbar-right nav-main">
+              <li class="hidden">
+                <a href="#" id="nav-link-Explore">
+                  Explore
+                </a>
+              </li>
+              <li>
+                <a href="/" id="nav-link-premium">
+                  Home/Premium
+                </a>
+              </li>
+              <li>
+                <a href="/music" id="nav-link-premium">
+                  music
+                </a>
+              </li>
+              
+              <li>
+                <a href="{% url 'contact' %}" id="nav-link-download">
+                  contact us
+                </a>
+              </li>
+              <li role="separator" class="divider"></li>
+              <li>
+                <a href="#" id="nav-link-sign-up">
+                  Sign up
+                </a>
+              </li>
+              <li>
+                <a href="#" id="header-login-link">
+                  Log In
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+
+      {% block body %}
+      {% endblock %}
+
+
+
+
+      <footer role="contentinfo" class="footer footer-highlight-aquamarine">
+        <div class="container">
+          <nav class="row">
+    
+            <div class="col-xs-12 col-md-2">
+              <div class="footer-logo">
+                <a href="#">VJ MUSIC</a>
+              </div>
+            </div>
+    
+            <div class="col-xs-6 col-sm-4 col-md-2">
+              <h3 class="nav-title">Company</h3>
+              <ul class="nav">
+    
+                <li>
+                  <a href="#" id="nav-link-about">
+                    About
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" id="nav-link-jobs">
+                    Jobs
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" id="nav-link-press">
+                    Press
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" id="nav-link-news">
+                    News
+                  </a>
+                </li>
+    
+              </ul>
+            </div>
+    
+            <div class="col-xs-6 col-sm-4 col-md-2">
+              <h3 class="nav-title">Communities</h3>
+              <ul class="nav">
+    
+                <li>
+                  <a href="#" id="nav-link-artists">
+                    For Artists
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" id="nav-link-developers">
+                    Developers
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" id="nav-link-brands">
+                    Brands
+                  </a>
+                </li>
+    
+              </ul>
+            </div>
+    
+            <div class="col-xs-6 col-sm-4 col-md-2">
+              <h3 class="nav-title">Useful links</h3>
+              <ul class="nav">
+                <li>
+                  <a href="#" id="nav-link-help">
+                    Help
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" id="nav-link-gift">
+                    Gift
+                  </a>
+                </li>
+    
+                <li class="hidden-xs ">
+                  <a href="#" id="nav-link-play">
+                    Web Player
+                  </a>
+                </li>
+    
+              </ul>
+            </div>
+    
+            
+          </nav>
+    
+          <nav class="row row-small">
+            <div class="col-xs-8 col-md-6">
+    
+              <ul class="nav nav-small">
+                <li>
+                  <a href="#">Legal</a>
+                </li>
+                <li>
+                  <a href="#">Privacy</a>
+                </li>
+                <li>
+                  <a href="#">Cookies</a>
+                </li>
+                <li>
+                  <a href="#">About Ads</a>
+                </li>
+              </ul>
+            </div>
+    
+            <div class="col-xs-4 col-md-6 text-right">
+              <a class="market" href="#" title="Click to change">
+                <div class="media">
+                  <div class="media-body media-middle">
+                   INDIA   
+                
+                  </div>
+                  <div class="media-right media-middle">
+                    <span class="media-object flag-icon flag-icon-us"></span>
+                  </div>
+                </div>  
+              </a>
+    
+              <small class="copyright">&copy; 2021 VJ MUSIC</small>
+            </div>
+          </nav>
+          <div class="bg-main">
+            <div class="bg-main-img"></div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
+
+
+<style>
+    .text-klein-purple {
+      color: #252525;
+      }
+      
+      .bg-white {
+        background-color: #fff;
+      }
+      
+      a.btn-scroll {
+        text-decoration: none;
+        color: white;
+        display: block;
+        text-align: center;
+      }
+      
+      a.btn-scroll:hover {
+        color: #9bf0e1;
+      }
+      
+      .btn-scroll-text {
+        text-transform: uppercase;
+        transition: color .3s ease-in-out;
+        display: block;
+        font-weight: 700;
+        letter-spacing: .1em;
+        margin-bottom: 20px;
+      }
+      
+      h2 {
+        font-size: 50px;
+        line-height: 1;
+        margin: 0 0 .75em;
+        font-weight: 900;
+      }
+      
+      h3 {
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 1.4;
+      }
+      
+      .jumbotron-whats-on {
+        text-align: left;
+        padding: 180px 0;
+      }
+      
+      .jumbotron p {
+        font-weight: 400;
+        font-size: 18px;
+        margin: 1em 0;
+      }
+      
+      .album-img {
+        padding: 0;
+      }
+      
+      body {
+        font-family: Helvetica,Arial,sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #222326;
+      }
+      
+      .navbar-dark {
+        background-color: rgba(0,0,0,.6);
+      }
+      
+      .navbar-dark .navbar-nav>li>a {
+        color: #fff;
+        padding: 28px 17px;
+        font-weight: 700;
+        line-height: 24px;
+      }
+      
+      .nav>li>a:focus,
+      .nav>li>a:hover {
+        background-color: inherit;
+        color: #9bf0e1;
+      }
+      
+      .nav .divider {
+        background-color: #d9dadc;
+        width: 1px;
+        height: 16px;
+        margin: 32px 17px;
+      }
+      
+      .navbar-logo {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 132px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        font: 0/0 a;
+        color: transparent;
+        text-shadow: none;
+        background-color: transparent;
+        border: 0;
+        float: left;
+        background-image: url('../img/logo.svg');
+      }
+      
+      .bg-main {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(50deg, #9fa6ff 0, #ff7ce3 100%);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -1;
+      }
+      
+      .bg-main-img {
+        display: block;
+        background-image: url('../img/bg-albums.png');
+        width: 100%;
+        height: 100%;
+        background-position: center;
+      }
+      .text-white {
+        color: white;
+      }
+      
+      .jumbotron {
+        background: none;
+        padding: 100px 0;
+        text-align: center;
+        margin: 0;
+      }
+      
+      .carousel-control.right, .carousel-control.left {
+        background: none;
+      }
+      
+      .btn {
+        padding: 17px 48px;
+        font-size: 14px;
+        line-height: 1;
+        border-radius: 500px;
+        padding: 18px 48px 16px;
+        transition-property: background-color,border-color,color,box-shadow,filter;
+        transition-duration: .3s;
+        border-width: 0;
+        letter-spacing: 2px;
+        min-width: 160px;
+        text-transform: uppercase;
+        white-space: normal;
+      }
+      
+      .jumbotron .btn {
+        margin: 20px 10px 30px;
+      }
+      
+      .btn-solid {
+        color: #fff;
+        background-color: #7c25f8;
+      }
+      .btn-solid:hover {
+        color: #fff;
+        background-color: #6207e3;
+      }
+      
+      .btn-lg {
+        font-size: 16px;
+        line-height: 1;
+        border-radius: 500px;
+        padding: 21px 56px 19px;
+      }
+      
+      .item h1 {
+        font-weight: 900;
+      }
+      
+      .text-signup a {
+        color: #fff;
+        text-decoration: underline;
+      }
+      
+      #carousel-tour {
+        margin-top: 50px;
+      }
+      @font-face {
+        font-family: Circular;
+        src: url('circular-medium.woff2');
+      }
+      
+      
+      body {
+        font-family: Circular,Helvetica,Arial,sans-serif;
+        
+      }
+      
+      .footer {
+        background-color: black;
+        color: white;
+        padding: 80px 0 50px;
+        text-align: left;
+      }
+      
+      .footer-highlight-aquamarine a {
+        color: white;
+      }
+      
+      .footer-highlight-aquamarine a:hover {
+        color: #9bf0e1;
+      }
+      
+      .footer-logo a {
+        display: block;
+        width: 132px;
+        height: 40px;
+        font: 0/0 a;
+        color: transparent;
+        border: 0;
+        background-image: url('../img/logo.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 50px;
+      }
+      
+      .footer .nav-title {
+        color: #919496;
+        font-size: 12px;
+        letter-spacing: .08em;
+        margin: 20px 0;
+        text-transform: uppercase;
+      }
+      
+      .footer .nav li a {
+        padding: 3px 0;
+        margin: 0 0 12px;
+      }
+      
+      .col-social {
+        margin-top: 20px;
+      }
+      
+      .footer .col-social ul {
+        float: right;
+      }
+      
+      .footer .col-social li {
+        display: inline-block;
+      }
+      
+      .footer .col-social li a {
+        padding: 15px;
+        margin-bottom: 12px;
+        background-color: #222326;
+        border-radius: 30px;
+      }
+      
+      .footer .col-social a:hover {
+        background-color: #222326;
+      }
+      
+      .col-social a img {
+        width: 24px;
+        height: 24px;
+      }
+      
+      .footer .nav-small a {
+        color: #919496;
+      }
+      
+      .footer .nav-small li a {
+        float: left;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 12px;
+        margin: 0;
+      }
+      
+      .row-small {
+        margin-top: 100px;
+      }
+      
+      .footer .nav-small li:first-child a {
+        padding-left: 0;
+      }
+      
+      .flag-icon-us {
+          background-image: url('https://cdn3.iconfinder.com/data/icons/finalflags/256/India-Flag.png');
+      }
+      
+      .flag-icon {
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        font-size: 18px;
+        height: 1em;
+        width: 1.33333333em;
+      }
+      
+      .market, .copyright {
+        color: #919496;
+        font-size: 12px;
+      }
+      
+      a.market {
+        color: #919496;
+        text-decoration: none;
+      }
+      
+      p{
+          font-size: large;
+          font-weight: bold;
+          font-family:sans-serif;
+          color: rgb(233, 222, 222);
+      }
+  </style>
+  

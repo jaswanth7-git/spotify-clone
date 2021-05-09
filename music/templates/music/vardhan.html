@@ -1,0 +1,35 @@
+{% extends 'music/base.html' %}
+{% block body %}
+    {% for i in albums %}
+    <div class="div">
+    <img class="img" src="{{ i.album_logo }}" alt="">
+    <a class="btn btn-primary" id="bt" href="{% url 'jaswanth' i.id %}">{{i.Album_Title}}</a> 
+    
+    </div>
+{% endfor %}
+   
+<style>
+    .img{
+        
+        height: 8cm;
+        width: 6cm;
+        margin-bottom: 3cm;
+        margin-left: 20%;
+        
+    }
+
+
+.div{
+    display:inline-flexbox;
+    justify-content: space-around;
+}
+
+#bt{
+    margin-left: 2cm;
+}
+</style>
+
+
+    
+{% endblock %}
+

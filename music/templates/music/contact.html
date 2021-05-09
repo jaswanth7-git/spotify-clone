@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VJ MUSIC</title>
+    <link rel="icon" href="https://t4.ftcdn.net/jpg/03/03/86/45/360_F_303864508_Cd302J6F685c30fPtNpIMp3qyKlVFEtI.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="bg-main">
+        <div class="bg-main-img"></div>
+      </div>
+    <header class="navbar navbar-dark navbar-fixed-top" role="banner">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="#">
+              <span class="navbar-logo">VJ MUSIC</span>
+            </a>
+          </div>
+      
+          <nav class="collapse navbar-collapse" id="navbar-nav" role="navigation">
+            <ul class="nav navbar-nav navbar-right nav-main">
+              <li class="hidden">
+                <a href="#" id="nav-link-Explore">
+                  Explore
+                </a>
+              </li>
+              <li>
+                <a href="/" id="nav-link-premium">
+                  Home/Premium
+                </a>
+              </li>
+              <li>
+                <a href="/music" id="nav-link-premium">
+                  music
+                </a>
+              </li>
+              
+              <li>
+                <a href="{% url 'contact' %}" id="nav-link-download">
+                  contact us
+                </a>
+              </li>
+              <li role="separator" class="divider"></li>
+              <li>
+                <a href="#" id="nav-link-sign-up">
+                  Sign up
+                </a>
+              </li>
+              <li>
+                <a href="#" id="header-login-link">
+                  Log In
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+<div class="total">
+    
+<h2 class="h2">Admin:1:Jaswanth</h2>
+<h4 class="phone" >Phone number: 8688463956</h4>
+
+    
+<div class="contact">
+
+  <P class="follow">Follow me on:</P>
+    
+    <a href="https://www.facebook.com/jaswanth.alla"> <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png" alt=""> </a>
+    
+    <a href="https://www.linkedin.com/in/alla-jaswanth-8724531b7/"> <img class="logo" src="data:image/png;base64,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" alt=""> </a>
+    <a href="https://www.instagram.com/jaswanth_77/"><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" ></a>
+    
+    
+    </div>
+
+<div>
+
+    <h2 class="h2" >Admin:2:Vamshi vardhan</h2>
+    <h4 class="phone" >Phone number: 8688289717</h4>
+    
+<div class="contact">
+  <P class="follow">Follow me on:</P>
+    
+    <a href="https://www.facebook.com/vamshivardhan.kannaiahgari"> <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png" alt=""> </a>
+    
+    <a href="https://www.linkedin.com/in/kannaiah-gari-3904731a7/"> <img class="logo" src="data:image/png;base64,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" alt=""> </a>
+    <a href="https://www.instagram.com/vamshi__vardhan/ "><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" ></a>
+</div>
+
+
+</div>
+
+
+</body>
+</html>
+
+
+<style>
+
+.total{
+  margin-top: 3cm;
+}
+
+  h4{
+    font-weight: bolder;
+    color: rgb(37, 35, 35);
+  }
+  .follow{
+    font-weight:bolder;
+      color: rgb(27, 10, 10);
+
+  }
+.h2{
+  color: #0b0b22;
+}
+
+
+    .contact{
+        display: flex;   
+        justify-content: center;
+        margin-top: 0.5cm;
+        animation: conanimater 1s ;
+        overflow: hidden;
+        animation-fill-mode: both;
+            
+    }
+    @keyframes conanimater{
+        0%{
+            height: 0cm;
+    
+        }
+        100%{
+            height: 1cm;
+        }
+    }
+    
+    .logo{
+      
+      height: 1cm;
+      margin-left: 2cm;
+      width: 1cm;
+    }
+
+   body{
+    background: linear-gradient(100deg, #554b91 0, #f539cc 100%);
+   }
+    h2{
+        color: whitesmoke;
+        margin-top: 7%;
+    }
+
+
+
+
+.navbar-dark {
+  background-color: rgba(0,0,0,.6);
+}
+
+.navbar-dark .navbar-nav>li>a {
+  color: #fff;
+  padding: 28px 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+  background-color: inherit;
+  color: #9bf0e1;
+}
+
+.nav .divider {
+  background-color: #d9dadc;
+  width: 1px;
+  height: 16px;
+  margin: 32px 17px;
+}
+
+.navbar-logo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 132px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  float: left;
+  background-image: url('../img/logo.svg');
+}
+
+    
+    </style>
+    

@@ -1,0 +1,67 @@
+{% extends 'music/base.html' %}
+{% block body %}
+
+<img class="img" src="{{ albums.album_logo }}" alt="">
+    <h1>movie : {{albums.Album_Title}}</h1>
+    <h4 class="">Artist : {{albums.artist}}</h4>
+    <h4>Casting : {{albums.casting}}</h4>
+    {% for i in albums.song_set.all %}
+    <div class="songs-div">
+    <p class="p">{{i.song_title}}</p> <br>
+    <audio class="audio-bar" controls>
+        <source src="{{i.song_play.url}}" type="audio/ogg">
+      </audio> <br>
+    </div>
+
+    {% endfor %}
+
+<style>
+    .songs-div{
+        
+        display: list-item;
+        margin-left: 20%;
+        align-items: center;
+        list-style: none;
+    
+    }
+    .p{
+       
+        margin-bottom: 0cm;
+        color: rgb(23, 53, 66);
+        margin-top: 1cm;
+    }
+
+    .audio-bar{
+        width: 70%;
+        margin-bottom: 1cm;
+        box-shadow: black;
+    }
+
+
+    .img{
+        margin-left: 15%;
+        height: 10cm;
+        width: 7cm;
+    }
+
+    h1{
+        margin-left: 15%;
+        font-size:xx-large;
+        font-weight:900;
+        color: rgb(23, 53, 66);
+
+    }
+    h4{
+        font-weight:bold;
+        margin-left: 15%;
+        color: rgb(23, 53, 66);
+    }
+
+
+</style>
+{% endblock %}
+
+
+
+
+    
